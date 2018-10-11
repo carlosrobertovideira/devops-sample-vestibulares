@@ -7,7 +7,7 @@ from django.http import HttpRequest
 from django.template import RequestContext
 from datetime import datetime
 
-def home(request):
+def  home(request):
     """Renders the home page."""
     assert isinstance(request, HttpRequest)
     return render(
@@ -20,7 +20,7 @@ def home(request):
         })
     )
 
-def contact(request):
+ def contact(request):
     """Renders the contact page."""
     assert isinstance(request, HttpRequest)
     return render(
@@ -48,7 +48,7 @@ def about(request):
         })
     )
 
-def cadastro_cursos(request):
+ddef cadastro_cursos(request):
     assert isinstance(request, HttpRequest)
     return render(
         request,
@@ -61,3 +61,17 @@ def cadastro_cursos(request):
         })
     )
 
+def criacao_vestibulares(request):
+    assert isinstance(request, HttpRequest)
+    return render(
+        request,
+        'app/criacao_vestibulares.html',
+        context_instance = RequestContext(request,
+        {
+            'title':'Criacao de Vestibulares',
+            'vestibulares': ['ADS' , 'SI', 'CC'],
+            'dia':datetime.now().day,
+            'mes':datetime.now().month,
+            'ano':datetime.now().year,
+        })
+    )
