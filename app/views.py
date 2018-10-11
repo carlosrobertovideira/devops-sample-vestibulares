@@ -48,7 +48,7 @@ def about(request):
         })
     )
 
-ddef cadastro_cursos(request):
+def cadastro_cursos(request):
     assert isinstance(request, HttpRequest)
     return render(
         request,
