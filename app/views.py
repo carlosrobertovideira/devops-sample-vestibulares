@@ -8,7 +8,7 @@ from django.template import RequestContext
 from datetime import datetime
 
 def  home(request):
-    """Renders the home page."""
+      """Renders the home page."""
     assert isinstance(request, HttpRequest)
     return render(
         request,
