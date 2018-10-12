@@ -1,6 +1,5 @@
-
 ---
-services: app-service\web, app-service
+ervices: app-service\web, app-service
 platforms: python
 author: cephalin
 ---
