@@ -61,4 +61,3 @@ def cadastro_cursos(request):
         })
     )
 
-
