@@ -60,3 +60,5 @@ def cadastro_cursos(request):
             'year':datetime.now().year,
         })
     )
+
+
